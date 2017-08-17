@@ -2,7 +2,9 @@
   "name": "react-exercise",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dapregala.github.io/react-exercise",
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "material-ui": "^0.19.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -11,11 +13,14 @@
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
     "styled-components": "^2.1.2"
+
   },
   "devDependencies": {
     "react-scripts": "1.0.11"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
